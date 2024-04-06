@@ -1,0 +1,66 @@
+.btn {
+  padding: 10px 20px 10px 20px;
+  background-color: blue;
+  color: aqua;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  color: brown;
+  background-color: black;
+}
+
+.heading {
+  font-size: 15px;
+  color: brown;
+}
+
+body {
+  margin: 0;
+  background-color: aliceblue;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Image {
+  height: 25px;
+  width: 25px;
+}
+
+.containerText {
+  font-size: small;
+}
+
+.container {
+  padding: 30px 30px;
+  background-color: aquamarine;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+.containerRow {
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  /* height: 100vh; Adjust height as needed */
+}
+.column {
+  padding: 10px;
+  margin: 10px;
+  align-items: center;
+}
+.center {
+  display: flex;
+  flex-direction: column; /* Arrange items in a column */
+  align-items: center; /* Center items horizontally */
+}
+.column:hover,
+.column.active {
+  background-color: blue;
+  cursor: pointer;
+  color: aliceblue;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
