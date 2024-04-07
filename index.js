@@ -4,12 +4,12 @@ const btnEL = document.getElementById("btn");
 
 const containerEl = document.getElementById("container");
 
-let selectedColumn = "";
+let selectedColumnText = "";
 
 columnELs.forEach((columnEL) => {
   columnEL.addEventListener("click", (event) => {
     removeActive();
-    selectedColumn =
+    selectedColumnText =
       event.target.innerText || event.target.parentNode.innerText;
     console.log(event.target.innerText || event.target.parentNode.innerText);
     event.target.classList.add("active");
@@ -18,12 +18,12 @@ columnELs.forEach((columnEL) => {
 });
 
 btnEL.addEventListener("click", () => {
-  if (selectedColumn !== "") {
+  if (selectedColumnText !== "") {
     containerEl.innerHTML = `
     <strong> Thank you! </strong>
     <br>
     <br>
-    <strong> Feedback: ${selectedColumn}</strong>
+    <strong> Feedback: ${selectedColumnText}</strong>
     <p> We'll use your feedback to improve our customer support.</p>
     
     `;
